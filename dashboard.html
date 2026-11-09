@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="SecureAuth protected dashboard">
+  <title>SecureAuth | Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="dashboard.js" defer></script>
+</head>
+<body>
+  <main class="dashboard-wrap">
+    <section class="dashboard-card">
+      <header class="dash-top">
+        <div class="brand"><span class="brand-mark">S</span><span>SecureAuth</span></div>
+        <button class="logout-btn" id="logout-button" type="button">Log out ↗</button>
+      </header>
+      <section class="welcome">
+        <p class="eyebrow">PROTECTED AREA</p>
+        <h1>Welcome, <span id="welcome-name">User</span>!</h1>
+        <p>You have successfully logged in. This dashboard is accessible only when a session is present in this browser.</p>
+      </section>
+      <div class="dash-grid">
+        <div class="dash-tile"><strong>Account</strong><span id="account-email">Loading…</span></div>
+        <div class="dash-tile"><strong>Authentication</strong><span>Session active</span></div>
+        <div class="dash-tile"><strong>Access</strong><span>Protected dashboard</span></div>
+      </div>
+      <p class="fine-print">SecureAuth · Oasis Infobyte Task 4 demonstration</p>
+    </section>
+  </main>
+</body>
+</html>
